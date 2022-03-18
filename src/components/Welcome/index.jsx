@@ -1,15 +1,15 @@
-import { Tela } from "./styles";
-import { Container } from "./styles";
+import { Tela, Container } from "./styles";
+import imgLogo from "../../assets/logo.png"
 
-function Welcome() {
+function Welcome({fn}) {
   return (
     <Tela>
       <Container>
         <span>
-          <img src="./assets/logo.png" alt="logo" />
+          <img src={imgLogo} alt="quizz logo" />
           <h1>ZapRecall</h1>
         </span>
-        <button>Iniciar Recall!</button>
+        <button onClick ={fn}>Iniciar Recall!</button>
       </Container>
     </Tela>
   );
