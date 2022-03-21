@@ -1,18 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const MainEl = styled.main`
-background-color: #FB6B6B;
-margin-top: 15vh;
-margin-bottom: 15vh;
-min-height: 70vh;
-overflow-y: scroll;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
-
-
-/* export const FlashcardEl = styled.div`
+export const FlashcardEl = styled.div`
 background-color: #FFFFFF;
 box-shadow: 0px 4px 5px 0px #00000026;
 border-radius: 5px;
@@ -62,4 +50,4 @@ font-size: 1rem;
             }
 
     }
-` */
+`

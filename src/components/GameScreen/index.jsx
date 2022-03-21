@@ -1,4 +1,4 @@
-import {Div} from "./styles"
+
 import Header from "./Header"
 import Footer from "./Footer";
 import Main from "./Main";
