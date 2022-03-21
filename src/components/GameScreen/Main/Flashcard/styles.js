@@ -8,7 +8,6 @@ position: relative;
 
 height: 65px;
 width: 300px;
-
 margin-bottom: 15px;
 
 display: flex;
@@ -77,8 +76,6 @@ font-size: 1.1rem;
                     bottom: 10px;
                     right: 10px;
                 }
-
-
         }
 `
 

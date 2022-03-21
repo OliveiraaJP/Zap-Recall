@@ -3,19 +3,16 @@ import { FlashcardEl, Box, Risk } from "./styles";
 import arrow from "../../../../assets/setinha.png"
 
 function Flashcard(props){
-    const {number, question, answer, keyz} = props;
-
-
+    const {number, question, answer} = props;
     const [flashcard, setFlashcard] = useState("");
 
     function setFlashcardState(flashcards){
         setFlashcard(flashcards)
     }
 
-
     if (flashcard === "") {
 		return (
-			<FlashcardEl className={flashcard} key={keyz}>
+			<FlashcardEl className={flashcard}  >
 				<p>Pergunta {number}</p>
 				<ion-icon
 					name="play-outline"
@@ -37,22 +34,34 @@ function Flashcard(props){
 		return (
 			<FlashcardEl className={"openAnswer"}> 
                 <p>{answer}</p>
-				<Box className="red" onClick={() => {setFlashcardState("redChosen")}}>
+				<Box className="red"
+				onClick={() => {
+							setFlashcardState("redChosen");
+							}}>
+
 					<p>Não lembrei</p>
 				</Box>
 
-				<Box className="yellow" onClick={() => {setFlashcardState("yellowChosen")}}>
+				<Box className="yellow" 
+				onClick={() => {
+					setFlashcardState("yellowChosen")
+					}}>
+
 					<p>Quase não lembrei</p>
 				</Box>
 
-				<Box className="green" onClick={() => {setFlashcardState("greenChosen")}}>
+				<Box className="green"
+				onClick={() => {
+					setFlashcardState("greenChosen")
+					}}>
+
 					<p>Zap!</p>
 				</Box>
             </FlashcardEl>
 		);
 	} else if( flashcard === "redChosen"){
 		return(
-		<FlashcardEl className={flashcard} key={keyz}>
+		<FlashcardEl className={flashcard}  >
 				<Risk className="red">
 					Pergunta {number}
 					<ion-icon name="close-circle"></ion-icon>
@@ -62,7 +71,7 @@ function Flashcard(props){
 
 	else if( flashcard === "yellowChosen"){
 		return(
-			<FlashcardEl className={flashcard} key={keyz}>
+			<FlashcardEl className={flashcard}  >
 					<Risk className="yellow">
 						Pergunta {number}
 						<ion-icon name="help-circle"></ion-icon>
@@ -73,7 +82,7 @@ function Flashcard(props){
 
 	else if( flashcard === "greenChosen"){
 		return(
-			<FlashcardEl className={flashcard} key={keyz}>
+			<FlashcardEl className={flashcard}  >
 					<Risk className="green">
 						Pergunta {number}
 						<ion-icon name="checkmark-circle"></ion-icon>
@@ -81,7 +90,6 @@ function Flashcard(props){
 			</FlashcardEl>
 			)
 	}
-    
 
 }
 

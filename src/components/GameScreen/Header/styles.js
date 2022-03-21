@@ -14,8 +14,6 @@ justify-content: center;
 align-items: center;
 padding-bottom: 3vh;
 
-
-
     p{
         font-size: 2rem;
         font-family: "Righteous", sans-serif;

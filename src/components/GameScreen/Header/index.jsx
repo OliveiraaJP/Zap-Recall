@@ -1,7 +1,6 @@
 import imgLogo from "../../../assets/logo.png"
 import {Logo} from "./styles";
 
-
 function Header(){
     return(
         <Logo>

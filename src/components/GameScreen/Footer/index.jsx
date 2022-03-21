@@ -1,9 +1,5 @@
 import {FooterDiv} from './styles';
 
-
-
-
-
 function Footer(){
 return(
     <FooterDiv>
