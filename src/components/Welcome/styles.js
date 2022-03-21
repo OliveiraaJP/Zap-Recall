@@ -37,6 +37,7 @@ background-color: #FB6B6B;
         font-size: 1.2rem;
         font-family: 'Recursive', sans-serif;
         font-weight: 400;
+        cursor: pointer;
     }
 `
 
