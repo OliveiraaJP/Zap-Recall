@@ -1,8 +1,8 @@
 import {FooterDiv} from './styles';
-import { useState } from 'react';
 
 
-const [finalgame, setFinalgame] = useState(0)
+
+
 
 function Footer(){
 return(
